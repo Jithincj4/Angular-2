@@ -6,18 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var core_1 = require("@angular/core");
-var commentbox_comments_1 = require("./commentbox-comments");
+const core_1 = require("@angular/core");
+const commentbox_comments_1 = require("./commentbox-comments");
 //@Injectable() specifies class is available to an injector for instantiation and an injector will display an error when trying to instantiate a class that is not marked as @Injectable()
-var CommentService = (function () {
-    //CountryService exposes the getContacts() method that returns the data
-    function CommentService() {
-    }
-    CommentService.prototype.getComments = function () {
+let CommentService = 
+//CountryService exposes the getContacts() method that returns the data
+class CommentService {
+    getComments() {
         return Promise.resolve(commentbox_comments_1.Comments); // takes values from country.contacts typescript file
-    };
-    return CommentService;
-}());
+    }
+};
 CommentService = __decorate([
     core_1.Injectable()
     //CountryService exposes the getContacts() method that returns the data

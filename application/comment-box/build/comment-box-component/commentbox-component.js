@@ -11,7 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const comment_box_service_1 = require("./comment-box-service");
-let MyListComponent = class MyListComponent {
+let CommentBoxComponent = class CommentBoxComponent {
     constructor(_commentService) {
         this._commentService = _commentService;
     }
@@ -22,17 +22,17 @@ let MyListComponent = class MyListComponent {
         this.getComments();
     }
 };
-MyListComponent = __decorate([
+CommentBoxComponent = __decorate([
     core_1.Component({
         selector: "comment-list",
         template: ` List of commenting peoples<br>
    <ul>
-      <li *ngFor="#comment of comments">{{ comment.name }}</li>
+      <li *ngFor="#comment of Comments">{{ comment.name }}</li>
    </ul>
    `,
         providers: [comment_box_service_1.CommentService]
     }),
     __metadata("design:paramtypes", [comment_box_service_1.CommentService])
-], MyListComponent);
-exports.MyListComponent = MyListComponent;
+], CommentBoxComponent);
+exports.CommentBoxComponent = CommentBoxComponent;
 //# sourceMappingURL=commentbox-component.js.map

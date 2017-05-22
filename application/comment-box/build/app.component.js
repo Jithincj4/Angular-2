@@ -12,7 +12,7 @@ let AppComponent = class AppComponent {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'my-app',
-        template: '<h1>Comment Box</h1>'
+        template: '<comment-list>Comment Box</comment-list>'
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

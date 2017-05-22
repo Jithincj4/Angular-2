@@ -7,13 +7,13 @@ import {Comment} from "./comment";
    selector: "comment-list",
    template: ` List of commenting peoples<br>
    <ul>
-      <li *ngFor="#comment of comments">{{ comment.name }}</li>
+      <li *ngFor="#comment of Comments">{{ comment.name }}</li>
    </ul>
    `,
    providers: [CommentService]
 })
 
-export class MyListComponent implements OnInit {
+export class CommentBoxComponent implements OnInit {
    public comments : Comment[];
    constructor(private _commentService: CommentService) {}
 

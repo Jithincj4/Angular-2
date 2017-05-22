@@ -14,4 +14,6 @@ I really think the TS compiler should be smart enough to figure out what "basic"
   }
 }
 
+Q2:directives does not exist in type component
+Ans: add the component in declarations: [] inside module.ts
 

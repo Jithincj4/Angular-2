@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
+
  
 @Component({
   selector: 'my-app',
-  template: '<h1>Comment Box</h1>'
+  template: '<comment-list>Comment Box</comment-list>'
 })
-export class AppComponent { }
+export class AppComponent {  }

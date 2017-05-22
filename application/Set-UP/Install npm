@@ -1,0 +1,7 @@
+You will need Nodejs & npm installed on your local system. You can verify the same in your system by running node --version 
+& npm --version. I am using node version 6.9.1 & npm version 3.10.8.
+
+
+refer: https://www.codeproject.com/Articles/1161302/Setting-up-Development-environment-for-Angular
+
+to create tsconfig.json in root tsc --init --target es5 --sourceMap --experimentalDecorators --emitDecoratorMetadata

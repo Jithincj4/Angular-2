@@ -5,3 +5,49 @@ You will need Nodejs & npm installed on your local system. You can verify the sa
 refer: https://www.codeproject.com/Articles/1161302/Setting-up-Development-environment-for-Angular
 
 to create tsconfig.json in root tsc --init --target es5 --sourceMap --experimentalDecorators --emitDecoratorMetadata
+
+npm install -g typescript
+By using -g, we have just installed typescript which is accessible globally across all your applications. Now let's create a folder in which we will have our application code. I have created my folder at D:\RD\AngularII, but you can choose a different path based on your preference. Inside AngularII folder, we will create a separate folder for this session. Before executing the below command, please make sure your command prompt / terminal is set to folder in which we will have our application code (in my case, it is D:\Rd\AngularII).
+
+Hide   Copy Code
+mkdir gettingStarted && cd gettingStarted
+The above command will create a folder and set your base directory to folder we just created. To build our application using typescript, we will have to add tsconfig.json. Using tsconfig.json, we will define output type and directory.
+
+Hide   Copy Code
+tsc --init --target es5 --sourceMap --experimentalDecorators --emitDecoratorMetadata
+The above command will create tsconfig.json in your root directory. Open tsconfig.json in Notepad or any text editor you are comfortable with. Add the below tag to compileroption section.
+
+Hide   Copy Code
+"outDir" : "build"
+By adding the above tag, we just configured typescript output to build folder at root level. This build folder will have scripts which will be served to web browser. Similarly, we will configure typescript to exclude node_modules from bundling. Add the below tag to your tsconfig.json.
+
+Hide   Copy Code
+"exclude": ["node_modules"]
+
+
+
+npm init
+Below are the details which you can enter in interactive mode. You can press enter to ignore other values.
+
+Name: session-v
+Version: 1.0.0
+Description: A session 5 tutorial
+Main: index.js
+Author: [Your Name]
+Let's add our dependence which
+
+
+
+
+npm install --save @angular/common@2.4.0 @angular/compiler@2.4.0 
+npm install --save @angular/core@2.4.0 @angular/platform-browser@2.4.0 @angular/platform-browser-dynamic@2.4.0 
+npm install --save @angular/router@3.4.0 systemjs@0.19.40 core-js@2.4.1 reflect-metadata@0.1.8 rxjs@5.0.1 zone.js@0.7.4
+
+
+npm install --save-dev lite-server concurrently
+
+"scripts": {
+    "start": "concurrently \"npm run watch\" \"npm run serve\"",
+    "watch": "tsc -w",
+    "serve": "lite-server"
+  },

@@ -11,5 +11,13 @@
     "url": "https://github.com/Jithincj4/Angular-2.git/"
   },
   "author": "Jithin Johnson",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "^2.4.0",
+    "@angular/compiler": "^2.4.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "lite-server": "^2.3.0"
+  }
 }

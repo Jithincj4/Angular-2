@@ -8,7 +8,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
 const commentbox_comments_1 = require("./commentbox-comments");
-//@Injectable() specifies class is available to an injector for instantiation and an injector will display an error when trying to instantiate a class that is not marked as @Injectable()
+//@Injectable() specifies class is available to an injector for instantiation and an injector will display
+// an error when trying to instantiate a class that is not marked as @Injectable()
 let CommentService = 
 //CountryService exposes the getContacts() method that returns the data
 class CommentService {

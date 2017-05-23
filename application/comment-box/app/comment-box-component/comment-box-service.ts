@@ -6,7 +6,7 @@ import {Comments} from "./commentbox-comments";
 
 @Injectable()
 
-//CountryService exposes the getContacts() method that returns the data
+//CommentService exposes the getComments() method that returns the data
 export class CommentService {
    getComments() {
       return Promise.resolve(Comments); // takes values from country.contacts typescript file

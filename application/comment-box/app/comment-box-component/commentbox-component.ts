@@ -7,21 +7,22 @@ import {Comment} from "./comment";
    selector: "comment-list",
    template: ` List of commenting peoples<br>
    <ul>
-      <li *ngFor="#comment of Comments">{{ comment.name }}</li>
+      <li *ngFor=" let comment of CommentArr">{{ comment.name }}</li>
    </ul>
    `,
    providers: [CommentService]
 })
 
 export class CommentBoxComponent implements OnInit {
-   public comments : Comment[];
+   public CommentArr : Comment[];
    constructor(private _commentService: CommentService) {}
 
    getComments(){
-      this._commentService.getComments().then((comments: Comment[]) => this.comments = comments);
+      this._commentService.getComments().then((comments: Comment[]) => this.CommentArr = comments);
    }
 
 ngOnInit():any{
    this.getComments();
+
 }
 }

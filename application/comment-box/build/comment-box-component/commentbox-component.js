@@ -16,7 +16,7 @@ let CommentBoxComponent = class CommentBoxComponent {
         this._commentService = _commentService;
     }
     getComments() {
-        this._commentService.getComments().then((comments) => this.comments = comments);
+        this._commentService.getComments().then((comments) => this.CommentArr = comments);
     }
     ngOnInit() {
         this.getComments();
@@ -27,7 +27,7 @@ CommentBoxComponent = __decorate([
         selector: "comment-list",
         template: ` List of commenting peoples<br>
    <ul>
-      <li *ngFor="#comment of Comments">{{ comment.name }}</li>
+      <li *ngFor=" let comment of CommentArr">{{ comment.name }}</li>
    </ul>
    `,
         providers: [comment_box_service_1.CommentService]

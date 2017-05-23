@@ -17,3 +17,14 @@ I really think the TS compiler should be smart enough to figure out what "basic"
 Q2:directives does not exist in type component
 Ans: add the component in declarations: [] inside module.ts
 
+Q3: Angular2 Unhandled Promise rejection: Template parse errors:
+
+Ans: You needed to do two changes,
+
+1). Removed directives:[CourseComponent] and
+
+declarations: [ App,CourseComponent ]   //#### added CourseComponent here
+2) changed # to let keywork
+
+<li *ngFor="let course  of courses"> 
+

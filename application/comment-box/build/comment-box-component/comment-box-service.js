@@ -14,7 +14,7 @@ let CommentService =
 //CommentService exposes the getComments() method that returns the data
 class CommentService {
     getComments() {
-        return Promise.resolve(commentbox_comments_1.Comments); // takes values from country.contacts typescript file
+        return Promise.resolve(commentbox_comments_1.Comments);
     }
 };
 CommentService = __decorate([

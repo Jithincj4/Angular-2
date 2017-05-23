@@ -9,6 +9,6 @@ import {Comments} from "./commentbox-comments";
 //CommentService exposes the getComments() method that returns the data
 export class CommentService {
    getComments() {
-      return Promise.resolve(Comments); // takes values from country.contacts typescript file
+      return Promise.resolve(Comments); 
    }
 }

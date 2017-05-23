@@ -7,7 +7,7 @@ import {Comment} from "./comment";
    selector: "comment-list",
    template: ` List of commenting peoples<br>
    <ul>
-      <li *ngFor=" let comment of CommentArr">{{ comment.name }}</li>
+      <li *ngFor=" let comment of CommentArr"><div><span>{{ comment.name }}</span><br/><span>{{comment.comment}}</span></div></li>
    </ul>
    `,
    providers: [CommentService]

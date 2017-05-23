@@ -1,0 +1,47 @@
+                Angular is designed to be modular, an Angular 2 app comprises of several components, which are connected via routing or selectors, these components may have 
+templates attached to it which may display component properties and attach events to interact with the properties. A component may use a service, to access a 
+particular feature or perform a very specific task. Services must be injected into components before they can be used from within the component, this is 
+referred to as Dependency Injection, which has also been a key feature of Angular 1.x.
+
+Modules
+
+Angular App comprises of several Modules, a module typically exports something of a purpose. 
+A module is a set of similar utilities that perform a similar task. Typically a module may export a 
+class which we may be imported in other modules. Angular 2 itself ships in large modules, 
+some of them are ‘angular/core‘, ‘angular/router‘ and there are more.
+
+Components
+
+Components are the basic building blocks of an Angular 2 app. A component is typically a type-script class which has a template attached, it usually assembles a screen,
+ ui-element or a route in the application. A component may have child components. Components can be navigated using routing or selectors.
+A component has a metadata/ decorator associated which describes the component. Metadata tells angular that the associated TypeScript class is actually to be considered 
+as a component.
+
+Services
+
+A good Angular 2 application is one in which specific tasks are assigned to different services.
+ A component may consume these services to perform these tasks. Typically a component should only deal with the user experience and the display of properties and use services 
+ to perform heavy behind the scenes operations. A service must be injected in to the controller before it can be used. This is done via dependency injection.
+
+Dependency Injection
+
+One of the key features of AngularJS is the dependency injection. Components need to use services to perform tasks, and these services 
+are injected into the component via the injector. The injector provides the instance of the service, so that it can be used in the component.
+ The idea behind dependency injection is to separate out concerns into smaller units and make components depend on these units to perform specific tasks, 
+ making your application more manageable and easy to unit test.
+
+Directives
+
+Directives are everywhere in Angular 2. A directive is a TypeScript Class with a metadata. 
+Directives may or may not have a template attached. Component is an example of a directive with a template. There are two kinds of directives in Angular 2, 
+structural and attribute directives. Structural directives modify the structure or layout of the DOM. Attribute directives alter the behavior of the elements. 
+Some of the examples of pre-built directives are ngFor, ngIf, ngSwitch, ngModel etc.
+
+TypeScript
+
+Angular 2 application can be written in JavaScript, Dart or TypeScript. For this tutorial we will be looking at a setup with TypeScript.
+TypeScript is Microsoft’s extension of JavaScript. TypeScript is a super-set of ES6 which in turn is a super set of the standard JavaScript (ES5). 
+This means whatever that can be done with ES5 or ES6 can be written in TypeScript. In-fact you can most of the times write in plain old JavaScript in a 
+TypeScript program. TypeScripts adds important features like annotations, interfaces and types in addition to classes and modules offered by ES6 on top of ES5. 
+Browsers do not understand TypeScript  and hence it has to be transpired into ES5 and this can be done using the TypeScript compiler.
+
